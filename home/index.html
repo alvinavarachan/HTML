@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      body
+      {
+        color: white;
+        font-family: cursive;
+        height: 500pt;
+        padding-left: 10px;
+        background-size: cover;
+      }
+
+
+      .headdiv
+      {
+        border-width: 100%;
+        height:5%;
+        padding-right: 10px;
+        background-color: green;
+      }
+      .footer
+      {
+        background-color: black;
+      }
+input[type=text],[type=password]
+{
+  width: 16em;
+  height: 26px;
+  margin-top: 15px;
+  PADDING-LEFT: 2em;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+}
+
+input[type=submit] {
+  width: 41%;
+      background-color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 21px;
+      border-radius: 4px;
+      cursor: pointer;
+}
+table{
+text-align-last:left;
+
+
+}
+
+.bodydiv2
+{
+  width:40%;
+  background-color: red;
+}
+.container
+{
+      padding-left: 10px;
+  width: 100%;
+ margin: 0 auto;
+}
+
+.block {
+  align: center;
+      margin-top: 63px;
+      width: 44%;
+      height: 345pt;
+      /* border-style: dashed; */
+      display: inline-table;
+      /* position: fixed; */
+      margin-inline-start: 40px;
+}
+.image{
+  position: absolute;
+  top: 480px;
+  width: 425px;
+  height: 200px;
+  left: 75px;
+  border: 1px solid white;
+  padding: 0px
+}
+
+
+    </style>
+  </head>
+  <body bgcolor="red" >
+<table>
+  <th>  <img src="Gods.png" width="60%" height="60%" alt="icon">
+  </th>
+  <th>  <h1>KERALA TOURISM</h1></th>
+  <th width="20%"></th>
+  <th><h3><a href="login.html">Sign in</a> | <a href="signup.html">Sign up</a></h3></th>
+</table>
+
+
+
+    <div class="headdiv" align="right" >
+<h3><a href="login.html">Home</a> | <a href="login.html">career</a> | <a href="login.html">States</a> | <a href="login.html">Contact us</a> |<a href="signup.html">About us</a></h3>
+    </div>
+
+    <div class="container">
+      <div class="block" >
+        <h2>Sign in</h2>
+        <table >
+          <tr>
+            <th >Name</th>
+            <td><input type="text" name="Name" value=""></td>
+          </tr>
+          <tr>
+            <th>Password</th>
+            <td><input type="password" name="Password" value=""></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+
+            <td></td>
+            <td align="center"><input type="submit" name="signin" value="Login" ></td>
+          </tr>
+          <tr style="padding:30px;">
+
+          </tr>
+
+        </table>
+</div>
+<div class="block">
+    <h2>Sign up</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <td><input type="text" name="Name" value=""></td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="Name" value=""></td>
+    </tr>
+    <tr>
+      <th>User Name</th>
+      <td><input type="text" name="Name" value=""></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input type="password" name="Password" value=""></td>
+    </tr>
+    <tr>
+      <th>Mobile Number</th>
+      <td><input type="text" name="Name" value=""></td>
+    </tr>
+    <tr>
+
+      <td></td>
+      <td align="center"><input type="submit" name="signin" value="Sign Up" ></td>
+    </tr>
+  </table>
+ </div>
+  </div>
+  <div class="image">
+  
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+ <img src="img.jpg" width="425" height="200">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="img1.jpg" width="425" height="200">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img2.jpg" width="425" height="200">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+
+  </div>
+
+
+<br>
+
+
+
+   <marquee direction = "left">Toll free No: 1-800-425-4747 (within India only), Department of Tourism, Government of Kerala, Vaikom, Kerala, India - 666608, Phone: +91 471 274739, Fax: +91 471 271638, E-mail: info@keralatourism.org.</marquee>
+  </body>
+  <footer align="center" class="footer">
+
+  All rights reserved © Kerala Tourism 2019.
+     <br>Copyright | Terms of Use | Contact Us.
+  </footer>
+</html>

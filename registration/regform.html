@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<style >
+
+	/*style for box*/
+
+.box {											
+  position: absolute;
+  top: 100px;
+  width: 450px;
+  height: 450px;
+  left: 300px;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: lightblue;
+
+  }
+
+  /*style for input text*/
+
+  input[type=text],[type=password]
+  {
+   width: 16em;
+  height: 26px;
+  margin-top: 15px;
+  position: absolute;
+  left:200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  }
+label{
+	width: 16em;
+   height: 26px;
+   margin-top: 15px;
+   position: absolute;
+   left:90px;
+}
+select{
+	width: 16em;
+   height: 26px;
+   margin-top: 15px;
+   position: absolute;
+   left:201px;
+}
+button{
+	 background-color: green;
+	 width: 9em;
+     height: 26px;
+     margin-top: 15px;
+     position: absolute;
+    left:201px;
+    border: coral;
+	   }
+
+
+
+  </style>
+
+
+</head>
+<body>
+<div class="box">
+<form >
+  
+    <h1 align="center">REGISTRATION FORM</h1>
+    
+    
+<!-- labeling first name, it is a required field -->
+
+    <label for="fname"><b>First Name :</b></label>
+    <input type="text" placeholder="Enter Fist Name" name="fname" required>
+    <br><br>
+
+    <label for="lname"><b>Last Name :</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+	<br><br>
+
+	<label for="uname"><b>User Name :</b></label>
+    <input type="text" placeholder="Enter User Name" name="uname" required>
+	<br><br>
+
+	<label for="password"><b>Password :</b></label>
+    <input type="text" placeholder="Enter Password" name="password" required>
+	<br><br>
+
+	<label for="repassword"><b>Re-Password :</b></label>
+    <input type="text" placeholder="Re-Password" name="repassword" required>
+    <br><br>
+
+    <label for="email"><b>Email :</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br><br>
+
+    <label for="mobileno"><b>Mobile No :</b></label>
+    <input type="text" placeholder="Enter Mobile No" name="mobileno" required>
+    <br><br>
+
+    
+
+    <label><b>District :</b></label>
+
+    <!-- putting dropper -->
+
+		<select name = "district">
+			<option value="district">Select District</option>
+			<option value="district">Kollam</option>
+			<option value="district">Kottayam</option>
+			<option value="district">Idukki</option>
+			<option value="district">Ernakulam</option>
+		</select>
+
+		<br><br><br>
+   <center>
+
+   	<!-- putting registration button -->
+
+    <button type="submit" class="registerbtn"  >Register</button>
+    
+ 	</center>
+ 	<div style="position: absolute;left:330px;top: 430px;"><a href="">Back to Home</a></div>
+</form>
+</div>
+</body>
+</html>
+
