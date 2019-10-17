@@ -1,0 +1,83 @@
+.img1{
+	position: absolute;
+      top: -5em;
+      width: 55em;
+      height: 50em;
+      left: 31em;
+      right: -2em;
+      border: 1px solid white;
+      background-color: white;
+
+}
+.img2{
+
+	  position: absolute;
+      top: 2em;
+      width: 15em;
+      height: 5em;
+      left: 5em;
+      border: 1px solid white;
+      background-color: white;
+
+
+}
+.cre{
+	position: absolute;
+      top: 10em;
+      width: 20em;
+      height: 15em;
+      left: 5em;
+      border: 1px solid white;
+      background-color: white;
+
+}
+input[type=text], input[type=password] {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0px;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+      text-align: left;
+      border-radius: 5%;
+      font-family: 'Open Sans',Sans-serif ;font-size: 16px;
+
+
+      }
+      input[type=submit]{
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0px;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: white;
+border-radius: 5%;
+ font-family: 'Open Sans',Sans-serif ;font-size: 16px;
+
+
+      }
+      a{
+            color: #54e192;
+            text-decoration: none;
+      }
+     .cre p{
+       font-family: 'Open Sans',Sans-serif ;font-size: 22px;
+   }
+   .img2 a:hover{
+            color:transparent;
+            background-color:#efefef;
+
+      }
+      input[type=submit]:hover{
+      		cursor: pointer;
+            color:mediumspringgreen;
+            background-color:#efefef;
+
+      }
+       input:hover{
+       		border-color: mediumspringgreen;
+            background-color:#efefef;
+
+      }
