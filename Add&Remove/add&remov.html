@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add&remove</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	li{
+  		text-align: center;
+  		font-weight: bold;
+  		font-size: 20px;
+  		color: black;
+  	}
+  </style>
+</head>
+<body style="background:url(lap.jpeg); background-size: cover;">
+<div class=container>
+	<div class="row">
+
+		<div class="col-sm-12 col-md-4 col-lg-4"></div>
+		<div class="col-sm-12 col-md-4 col-lg-4">
+			<ul class="list-group">
+				<h1 class="list-group-item" style="text-align: center; color: red; font-weight: bold;"> NAMES </h1>
+				<li class="list-group-item">Albin</li>
+				<li class="list-group-item">Lavin</li>
+			</ul>
+			<button type="button" class="btn btn-info"  onclick="add()">ADD </button>
+			<button type="button"  class="btn btn-danger"  onclick="remove()">Remove</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+function add(){
+	
+	var newEl = document.createElement ('li');
+	newEl.className="list-group-item";
+	var a=["Thomas","Athul","Alvin","Jomy","Sinto","Vinayan"];
+	var n = Math.floor(Math.random()*a.length);
+ 	var position = document.getElementsByTagName('ul')[0];
+ 	var lastItem = position.lastChild;
+ 	if(lastItem.textContent!=a[n])
+	{
+	 var newText = document.createTextNode(a[n]);
+	}
+	else {
+		 var newText = document.createTextNode(a[n-1]);
+	}
+	newEl.appendChild(newText);
+	position.appendChild(newEl);
+	
+}
+
+
+function remove(){
+
+	var a = document.getElementsByTagName ('li')[0];
+	var pos=document.getElementsByTagName('ul')[0];
+	pos.removeChild(a);
+}
+</script>
