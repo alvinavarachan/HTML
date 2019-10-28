@@ -1,0 +1,15 @@
+.box{
+	background-color: transparent;
+
+}
+
+li{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+
+}
+.list-group-item{
+	background-color: orange;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<body style="background-color: gray">
+ <div class="container">
+ 	<div class="row">
+		<div class="col-sm-12 col-md-4 col-lg-4"></div>
+		<div class="col-sm-12 col-md-4 col-lg-4">
+		<div class="box" style="margin-top: 140px">
+			
+				<h1 style="text-align: center; color: black; font-weight: bold; background-color: gray"> NAMES  </h1>
+				<h3 style="text-align: center; color: black; font-weight: bold;background-color:gray" id="counter"> Total names is 2 </h3>
+			<ul class="list-group" >
+				<li class="list-group-item">Alvin</li>
+				<li class="list-group-item">Vinayan</li>
+			</ul>
+
+			<button type="button"  id="b1" class="btn btn-info"   style="position: absolute; right: 15px;">ADD NAMES</button>
+			<button type="button" id="b2" class="btn btn-success"  style="position: absolute; right: 15px;">ADD </button>
+			<form><input type="textbox" name="search" id="textb" style="width: 70%; "></form>
+			
+		</div>
+		</div>
+ 	</div>
+ </div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+$(function() {
+    $('#b2,#textb').hide();
+});
+
+
+
+$ ("#b1").click (function(){
+ 
+ $ ("#b1").hide()
+ $ ("#b2,#textb").show()
+ $("#textb").focus();
+
+});
+
+
+
+$("#b2").click(function () {
+
+		
+	var a= $('#textb').val();
+
+	if (a!= ("")){
+
+	$(".box").slideUp(2000).slideDown(2000);
+	$("#b2").hide(2000).show(2000);
+
+	var newtag = document.createElement ('li');
+	newtag.className="list-group-item";
+	var text=document.createTextNode(a);
+	newtag.appendChild(text);
+	var pos=document.getElementsByTagName('ul')[0];
+	pos.appendChild(newtag);
+
+    var count= $('.list-group li').length;
+    $ ("#counter").html ("Total names is "+count)
+   
+	
+	$('#textb').val("");
+	$("#textb").focus();
+	}
+	else{
+		$("#textb").focus();
+		window.alert("Please enter valid name");
+
+	}
+
+		
+    });
+	
+
+</script>
