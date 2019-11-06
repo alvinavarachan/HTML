@@ -1,0 +1,30 @@
+.box{                           /* headerbox*/
+    position: fixed;
+    top: 0em;
+    width: 100em;
+    height: 6em;
+    left: 0em;
+    border: 0px solid white;
+    background: url("bg-header.jpg");
+    
+    
+    background-color: red;
+}
+.box p{                         /*paragraph in header box*/
+	font-weight: 400;
+    line-height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #b5c1ad;
+	margin-left:  65em;
+	margin-top: 2em;
+}
+.pedal{                       /* image of pedal*/
+	position: absolute;
+    top: 1em;
+    width: 16em;
+    height: 3em;
+    left: 23em;
+ background-color: red;
+
+}

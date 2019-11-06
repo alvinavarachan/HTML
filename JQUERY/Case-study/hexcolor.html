@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hexcolor</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="hexcolor.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-3"></div>
+			<div class="col-sm-12 col-md-6 col-lg-6" id="col1">
+			<h1>Build a hex Color generator</h1>
+			<div id="box" >
+				
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	
+	$(document).ready(function () {
+	setInterval(function () {
+ 	var hex=["1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+ 	var colors="#";
+ 	for (var i = 0; i < 6; i++) 
+ 	{
+   		colors+=hex[(Math.floor(Math.random() * 16))];
+ 	}
+ 	$("#box").css("background-color",colors);
+	},1000);
+});
+</script>

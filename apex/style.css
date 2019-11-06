@@ -1,0 +1,199 @@
+.box{
+	position: absolute;
+	top: 0em;
+	width: 86em;
+	height: 32em;
+	right: 0em;
+	border: 1px solid white;
+	background-color: black;
+}
+.heading{
+	
+	font-size: 48px;
+    font-weight: 700;
+    color: #F05136;
+    line-height: 74px;
+    margin-top: -24%;
+    font-family: 'Nunito Sans', sans-serif;
+    
+	
+}
+.info{
+    margin-top: -2em;
+	  font-size: 20px;
+    color: #000000;
+    line-height: 35px;
+    font-weight: 500;
+}
+.project{
+	position: absolute;
+    top: 33em;
+    width: 47em;
+    height: 22em;
+    right: 40em;
+    border: 1px solid white;
+    /*background-color: orange;*/    
+
+}
+.project p, .announce p, .course p{
+	color: black;
+    font-size: 30px;
+    line-height: 6rem;
+     font-family: 'Nunito Sans', sans-serif;
+
+}	   
+.project .box2{
+	position: absolute;
+    top: 6em;
+    width: 46.5em;
+    height: 12em;
+    right: 0em;
+    border: 1px solid #E4E4E4;
+    /*background-color: white;*/
+
+}
+.project .box3{
+	position: absolute;
+    top: 6em;
+    width: 34em;
+    height: 12em;
+    right: 0em;
+  /* background-color: blue;*/
+
+}
+.box3 p{
+	color: black;
+    font-size: 15.5px;
+    line-height: 2rem;
+     font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.announce{
+	position: absolute;
+    top: 33em;
+    width: 28em;
+    height: 18em;
+    right: 3em;
+    border: 1px solid white;
+    background-color: white;    
+
+}
+.bp{
+	position: absolute;
+    top: 6em;
+    width: 24em;
+    height: 14em;
+    right: 4em;
+    border: 1px solid #E4E4E4;
+    background-color: white;
+}
+.bp p{
+	
+	color: black;
+    font-size: 15.5px;
+    line-height: 2rem;
+     font-family: 'Nunito Sans', sans-serif;
+     margin-left: 10px;
+}
+input[type=button]{
+	color: white;
+	background-color: darkorange;
+	width: 15%;
+	height: 10%;
+	border: 0px solid #E4E4E4;
+	border-radius: 25%;
+}
+
+.course{
+	position: absolute;
+    top: 54em;
+    width: 87em;
+    height: 40em;
+    right: 0em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightblue;*/
+}
+.cbox{
+	position: absolute;
+    top: 10em;
+    width: 31em;
+    height: 23em;
+    right: 57em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightgreen;*/
+}
+.cbox p{
+	
+	color: black;
+    font-size: 30px;
+    line-height: 2rem;
+     font-family: 'Nunito Sans', sans-serif;
+     margin-left: 10px;
+}
+
+.cbox2{
+	position: absolute;
+    top: 12em;
+    width: 31em;
+    height: 27em;
+    right: 10em;
+    border: 0px solid #E4E4E4;
+    background-color: white;
+}
+.cbox2 p{
+	
+	color: black;
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 12px;
+}
+.scroll{
+	position: absolute;
+    top: 98em;
+    width: 87em;
+    height: 8em;
+    right: 0em;
+    border: 0px solid #E4E4E4;
+    
+    /*background-color: lightblue;*/
+
+}
+.face{
+    position: absolute;
+    top: 10em;
+    width: 10em;
+    height: 2em;
+    right: 77em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightblue;*/
+}
+.about{
+    position: absolute;
+    top: 8em;
+    width: 8em;
+    height: 10em;
+    right: 25em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightblue;*/
+}
+.connect{
+    position: absolute;
+    top: 8em;
+    width: 8em;
+    height: 10em;
+    right: 14em;
+    border: 0px solid #E4E4E4;
+   /* background-color: lightblue;*/
+}
+
+.apex{
+    position: absolute;
+    top: 23em;
+    width: 24em;
+    height: 10em;
+    right: 40em;
+    border: 0px solid #E4E4E4;
+   /* background-color: lightblue;*/
+}

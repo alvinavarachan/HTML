@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do List</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="todolist.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-3 col-lg-3"></div>
+		<div class="col-sm-12 col-md-6 col-lg-6" id="col1">
+			<input type="text" name="name"  id="textb" placeholder="What needs to be done?">
+			<div id="p1">
+				
+			</div>			
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#textb").keypress(function(e) 
+	{
+
+		if(e.which == 13) {
+
+   			var a= $("#textb").val();
+    		$('#p1').append('<p >'+a+'</p>');
+     		$('#textb').val("");
+      		$('#textb').focus();
+
+      		$("p").dblclick(function()
+      		{
+          		$(this).hide();
+             });
+
+      		$("p").mouseover(function()
+              {
+                $(this).css("text-decoration", "line-through");
+              });
+             $("p").mouseout(function()
+              {
+                $(this).css("text-decoration", "none");
+              });
+		}
+
+    });
+});
+
+
+</script>

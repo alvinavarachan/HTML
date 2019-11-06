@@ -1,0 +1,23 @@
+.box{
+	
+	background-color: black;
+}
+
+textarea{
+	width: 100%;
+	height: 300px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	color: white;
+	background-color: black;
+
+}
+.box2{
+	background-color: black;
+	color: white;
+}
+
+::placeholder {
+  color: white;
+  
+}

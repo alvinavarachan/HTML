@@ -1,0 +1,49 @@
+.box{
+	margin-top: 100px;
+	background-color: lightpink;
+	height: auto;
+	width: 100%;
+}
+.box h1 {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+.box label {
+	text-align: center;
+	font-weight: bold;
+	color:black;
+	font-size: 25px;
+	margin-left: 40px;
+}
+
+#len{
+	margin-left: 50px;
+	width: 50%;
+	text-align: center;
+}
+#bre{
+	margin-left: 35px;
+	width: 50%;
+	text-align: center;
+}
+
+#btn{
+	width: 100px;
+	height: 40px;
+	margin-left: 40%;
+	margin-top: 40px;
+}
+#result{
+	text-align: center
+	
+}
+#area{
+	text-align: center;
+	margin-left: 30px;
+	width: 30%;
+	height: 50px;
+	font-weight: bold;
+	font-size: 25px;
+
+}

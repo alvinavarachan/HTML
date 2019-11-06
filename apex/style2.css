@@ -1,0 +1,200 @@
+
+.box{
+    position: absolute;
+    top: 0em;
+    width: 86em;
+    height: 26em;
+    right: 0em;
+    border: 1px solid white;
+    background-color: black;
+}
+.heading{
+    
+    font-size: 49px;
+    font-weight: 700;
+    color: black;
+    line-height: 74px;
+    margin-top: -24%;
+    font-family: 'Nunito Sans', sans-serif;
+    
+    
+}
+.info{
+    margin-top: -2em;
+      font-size: 22px;
+    color: #000000;
+    line-height: 33px;
+    font-weight: 500;
+}
+
+input[type=button]{
+    color: white;
+    background-color: orangered;
+    width: 11%;
+    height: 11%;
+    border: 0px solid #E4E4E4;
+    border-radius: 0%;
+    position: absolute;
+    top: 13em;
+    right: 13em;
+}
+
+.text{
+    position: absolute;
+    top:26em;
+    width: 87em;
+    height: 10em;
+    right: 0em;
+    border: 0px solid #E4E4E4;
+     /* background-color: lightblue;*/
+}
+.text p{
+    font-size: 22px;
+    color: #000000;
+    line-height: 28px;
+    margin-left: 0%;
+    padding-right: 5%;
+}
+
+.table1{
+    position: absolute;
+    top:38em;
+    width: 40em;
+    height: 50em;
+    right: 47em;
+    border: 0px solid #E4E4E4;
+
+}
+
+.table1 thead,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px 10px 12px 27px;
+}
+th{
+    color:white;
+    column-span: 15px;
+}
+
+.cap{
+    position: absolute;
+    top:56em;
+    width: 87em;
+    height: 10em;
+    right: 0em;
+    
+}
+.cap p{
+     font-size: 20px;
+    font-weight: 500;
+}
+
+    .table2{
+    position: absolute;
+    top:60em;
+    width: 70em;
+    height: 10em;
+    right: 17em;
+    border: 0px solid #E4E4E4;
+
+}
+
+.table2 th,tr,td {
+    border: 1px solid black;
+border-collapse: collapse;
+padding:  15px 10px 13px 28px;
+}
+th{
+    color:black;
+    column-span: 15px;
+}
+td,th,td{
+   padding: 12px 7px 0px 27px;
+}
+b{
+   color: black;
+}
+
+
+
+.loc{
+     position: absolute;
+    top: 69em;
+    width: 35em;
+    height: 40em;
+    right: 52em;
+    border: 0px solid #E4E4E4;
+    /*background-color: blue;*/
+}
+.loc p, .address p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    color:black;
+    font-family: 'Nunito Sans', sans-serif
+}
+.address{
+     position: absolute;
+    top: 73em;
+    width: 27em;
+    height: 15em;
+    right: 20em;
+    border: 0px solid #E4E4E4;
+   /* background-color: blue;*/
+}
+
+.details{
+     position: absolute;
+    top: 106em;
+    width: 87em;
+    height: 40em;
+    right: 0em;
+    border: 0px solid #E4E4E4;
+    /*background-color: blue;*/
+}
+
+.details p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 45px;
+    color:black;
+    font-family: 'Nunito Sans', sans-serif
+}
+
+.face{
+    position: absolute;
+    top: 150em;
+    width: 10em;
+    height: 2em;
+    right: 77em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightblue;*/
+}
+.about{
+    position: absolute;
+    top: 148em;
+    width: 8em;
+    height: 10em;
+    right: 25em;
+    border: 0px solid #E4E4E4;
+    /*background-color: lightblue;*/
+}
+.connect{
+    position: absolute;
+    top: 148em;
+    width: 8em;
+    height: 10em;
+    right: 14em;
+    border: 0px solid #E4E4E4;
+   /* background-color: lightblue;*/
+}
+
+.apex{
+    position: absolute;
+    top: 163em;
+    width: 24em;
+    height: 10em;
+    right: 40em;
+    border: 0px solid #E4E4E4;
+   /* background-color: lightblue;*/
+}
