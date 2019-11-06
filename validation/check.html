@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation</title>
+  <link rel="stylesheet" href="check.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <!--  <link rel="stylesheet"  href="css/bootstrap.min.css"> -->
+
+</head>
+<body style="background-color: gray">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4" id="c1">
+      <div class="box1" id="main">
+        <h1>PUBG</h1>
+        <img src="pubg.jpg" style="width: 80%; height: 50%;"  id="img1">
+        <h3 id="head">PUBG Mobile Tournament</h3>
+        <div id="details">
+          <p>Last Date of Registration: 5 NOV 2019</p>
+          <p>Tournament Starts: 10 NOV 2019</p>
+          <p>Grand Finale: 20 NOV 2019</p>
+          <p>Place: Kolkata</p>
+        </div>
+        <img src="prize.png" id="img2">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4" id="c2">
+      <div class="box1">
+        <h1>Settings</h1>
+        <br> <br>
+        <p>NAME:</p>
+        <input type="text" name="name" placeholder="Enter Your Name" id="name"  onblur= "checkname()" >
+        <span class="ftick glyphicon glyphicon-ok" id="t1"></span>
+        <div id="fname" class="tx"></div> 
+        <p>EMAIL:</p>
+        <input type="text" name="email" placeholder="Enter Your Email-id" id="email" onblur= "checkemail()" >
+        <span class="ftick glyphicon glyphicon-ok" id="t2"></span>
+        <div id="femail" class="tx"></div>
+        <p>PASSWORD:</p>
+        <input type="PASSWORD" name="pswd" placeholder="Enter Password" id="pswd"  onblur= "checkpass()">
+        <span class="ftick glyphicon glyphicon-ok" id="t3"></span>
+        <div id="fpswd" class="tx"></div>
+        <p>CONFIRM PASSWORD:</p>
+        <input type="PASSWORD" name="cpswd" placeholder="Re-Enter Password" id="cpswd"  onblur= "checkrepass()">
+        <span class="ftick glyphicon glyphicon-ok" id="t4"></span>
+        <div id="fcpswd" class="tx"></div>
+        <br><br>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4" id="c2">
+      <div class="box1">
+        <h1>Profile</h1>
+        <br> <br>
+        <p>BIRTHDAY:</p>
+        <input type="date" name="date" placeholder="Enter Birthday" id="date" onblur= "checkdate()" >
+        <span class="ftick glyphicon glyphicon-ok" id="t5"></span>
+        <div id="fdate" class="tx"></div>
+        <p>SHORT BIO <h5 style="margin-left: 10px;">(Max 150 characters)</h5></p>
+        <textarea type="textarea" name="cpswd" placeholder="About You" id="bio"></textarea>
+        <span class="ftick glyphicon glyphicon-ok" id="t6"></span>
+        <div id="fbio" class="tx" style="color: white ;"></div>
+        <a href=""><button type="button" class="btn btn-success" id="btn">REGISTER</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="check-function.js"></script>
+<script src="check-key.js"></script>
+</body>
+</html>

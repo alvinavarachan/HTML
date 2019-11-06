@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+  	<div class="row">
+  		<div class="col-sm-12 col-md-6 col-lg-6">
+        <div id="b1">
+  			 <h1> WEATHER APP</h1>
+         <div class="text">
+         <h3>Build a simple UI that shows the weather of a city that is entered by the user.</h3>
+          <h3>Use HTML, CSS, and Javascript to achieve this.</h3>
+          <br><br>
+          </div>
+          <p>Requirements:</p>
+          <p>1) Current Date and Time</p>
+          <p>2) Weather can be random</p>
+          <p>3) Temperature</p>
+          <p>4) TextBox with auto complete</p>
+          
+        </div>
+      </div>
+  		<div class="col-sm-12 col-md-6 col-lg-6" >
+  			<div id="b2">
+           <!-- <h1 id="place"> </h1>
+           <h3 id="tdate"></h3>
+           <p class="clouds"></p>
+           <p class="temp"></p>
+           <p class="desc"></p>
+          <label><h2>Enter City Name</h2></label>
+          <br>
+          <input type="text" name="search" placeholder="City, State" id="inptext">
+          <button type="submit" class="submit" onclick="check()">SUBMIT</button> -->
+        <br>
+        <h1 class="name" id="name"></h1>
+        <br>
+        <h3 id="tdate"></h3>
+        <p class="temp"></p>
+        <p class="clouds"></p>
+        <p class="desc"></p>
+        <label><h1>Enter City Name</h1></label>
+        <br>
+        <input type="text" id="autocomplete" class="input_text" placeholder="City, State">
+        <button type="submit" value="Submit" class="submit" onclick="check()"><h4>SUBMIT</h4></button>
+           
+
+
+
+
+        </div>
+      </div>
+    </div>
+</div>
+<script src="weathr.js"></script>
+</body>
+ 
+</html>
+
+

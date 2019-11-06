@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Watch</title>
+  <link rel="stylesheet" href="watch.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <!--  <link rel="stylesheet"  href="css/bootstrap.min.css"> -->
+
+</head>
+<body style="background-color: lightblue;" onload="startTime()">
+<div class="container">
+  	<div class="row">
+  		<div class="col-sm-12 col-md-3 col-lg-3" id="c1"></div>
+    	<div class="col-sm-12 col-md-6 col-lg-6" id="c1">
+    		<div id= "box1">
+				<h4 class="mhead">MUSIC </h4> 
+				<h4 id="Dtime"></h4>
+					<div class="muicon">
+						<img src="muimage.jpg" style="width: 70px; height: 70px;">
+					</div>
+					<div class="muname">
+						<p class="mutext" >Singapenne</p>
+						<p class="mutext"  >Ariyathe Ariyathe</p>
+						<p class="mutext" >Mamangam</p>
+			            <p class="mutext" >Rabne Banadi Jodi</p>
+			            <p class="mutext" >Lucifer</p>
+			            
+			            <audio id="myAudio" >
+			            	<source src="Singapenne.mp3" id="1">
+			            	<source src="Ariyathe Ariyathe.mp3"  id="1">
+			            	
+			            </audio>
+			            
+					</div>
+					
+				<div class="mucontrol">
+    				<button><span class="glyphicon glyphicon-fast-backward" onclick="plusDivs(-1)"></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="playAudio()" id="btnpl" class="btn"><span class="glyphicon glyphicon-play"></span></button><button onclick="pauseAudio()" class="btn" id="btnpa"><span class="glyphicon glyphicon-pause"></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="nextsong()" ><span class="glyphicon glyphicon-fast-forward" onclick="plusDivs(1)"></span></button>
+    			</div>
+				<div class="muoption">
+    				<a href="messege.html"><span class="glyphicon glyphicon-comment"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="music.html"><span class="glyphicon glyphicon-music"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timer.html"><span class="glyphicon glyphicon-time"></span></a>
+    			</div>
+			</div>
+    			
+    		</div>
+    	</div>
+	</div>
+</div>
+<script src="watch.js"></script>
+</body>
+</html>
+
+<script>
+function plusDivs(n) 
+{
+showDivs(slideIndex += n);
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function showDivs(n) {
+var i;
+
+var x = document.getElementsByClassName("mutext");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+
+
+
+
+
+
+</script>

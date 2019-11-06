@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Watch</title>
+  <link rel="stylesheet" href="watch.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <!--  <link rel="stylesheet"  href="css/bootstrap.min.css"> -->
+
+</head>
+<body style="background-color: lightblue;" >
+<div class="container">
+  	<div class="row">
+  		<div class="col-sm-12 col-md-3 col-lg-3" id="c1"></div>
+    	<div class="col-sm-12 col-md-6 col-lg-6" id="c1">
+    		<div id= "box1">
+				<h4 class="mhead">TIMER</h4> 
+				<h4 id="Dtime"></h4>
+					<div class="timer">
+            <h3 style="color: white;">Stop Watch </h3>
+            <h1 style="color: white"><time >00:00:00</time></h1>
+
+          </div>
+					<div class="timeicon">
+            <button onclick="start();" id="start" style="color: white">START</button>
+            <button type="button" value="stop" onclick="stop();" id="stop" style="color: white">STOP</button>
+            <button type="button" value="reset" onclick="reset()" id="clear" style="color: white">RESET</button>
+          </div>
+				<div class="tioption">
+    				<a href="messege.html"><span class="glyphicon glyphicon-comment"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="music.html"><span class="glyphicon glyphicon-music"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timer.html"><span class="glyphicon glyphicon-time"></span></a>
+    			</div>
+			</div>
+    			
+    		</div>
+    	</div>
+	</div>
+</div>
+<script src="watch.js"></script>
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+
+  var h1 = document.getElementsByTagName('h1')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+
+
+
+/* Start button */
+
+start.onclick = timer;
+
+/* Stop button */
+stop.onclick = function() {
+    clearTimeout(t);
+}
+
+/* Clear button */
+clear.onclick = function() {
+    h1.textContent = "00:00:00";
+    seconds = 0; minutes = 0; hours = 0;
+    clearTimeout(t);
+}
+
+</script>

@@ -1,0 +1,113 @@
+
+#box1{
+	margin-top: 120px;
+	width: 100%;
+	height: 500px;
+	background-image: url("watch.jpg");
+	background-size: cover; 
+
+}
+
+#box1 h4{
+	color: white;
+
+}
+a{
+	
+	text-decoration: none;
+	font-size: 30px;
+	
+
+}
+
+.mhead{
+	padding:140px 1px 0px 190px;
+	
+}
+#Dtime{
+	margin:-28px 1px 0px 310px;
+
+}
+.muicon{
+	background-color: red;
+	width: 70px;
+	height: 70px;
+	margin:25px 1px 0px 250px;
+
+}
+.muname{
+	
+	width: 190px;
+	height: 30px;
+	margin:10px 1px 0px 190px;
+
+}
+
+.mucontrol{
+	color: white;
+	margin:20px 1px 0px 210px;
+
+}
+
+.metext{
+
+	width: 150px;
+	height: 150px;
+	margin:25px 1px 0px 210px;
+
+}
+.messtext{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.mutext{
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+
+.meicon{
+	
+	width: 190px;
+	height: 30px;
+	margin:10px 1px 0px 190px;
+
+}
+
+
+
+.timer{
+	/*background-color: red;*/
+	width: 150px;
+	height: 120px;
+	margin:50px 1px 0px 210px;
+
+}
+
+.timeicon{
+	
+	width: 190px;
+	height: 30px;
+	margin:30px 1px 0px 190px;
+
+}
+.muoption{
+	margin:80px 1px 0px 212px;
+}
+
+.meoption{
+	margin:50px 1px 0px 212px;
+}
+.tioption{
+	margin:65px 1px 0px 212px;
+}
+
+
+button{
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+
+}
